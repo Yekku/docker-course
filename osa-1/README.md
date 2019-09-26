@@ -2,13 +2,17 @@
 
 1.1
 
+```bash
 docker ps -a
 CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS                      PORTS               NAMES
 6dba12893a50        nginx                               "nginx -g 'daemon of…"   2 minutes ago       Exited (0) 33 seconds ago                       focused_sinoussi
 83c1b069cea6        nginx                               "nginx -g 'daemon of…"   2 minutes ago       Exited (0) 17 seconds ago                       jovial_nash
 85039edfbefb        nginx                               "nginx -g 'daemon of…"   2 minutes ago       Up 2 minutes                80/tcp              sleepy_bartik
+```
 
 1.2
+
+```bash
 docker container prune
 WARNING! This will remove all stopped containers.
 Are you sure you want to continue? [y/N] y
@@ -43,16 +47,20 @@ ubuntu                              latest              2ca708c1c9cc        7 da
 devopsdockeruh/pull_exercise        latest              d9854bc0e13a        6 months ago        75.3MB
 devopsdockeruh/exec_bash_exercise   latest              489b6d8f2ab8        7 months ago        897MB
 MacBook-Pro-Yekku:docker-course yekku$
+```
 
 1.3
 
+```bash
 docker run -it devopsdockeruh/pull_exercise
 Give me the password: basics
 You found the correct password. Secret message is:
 "This is the secret message"
+```
 
 1.4
 
+```bash
 docker run -d devopsdockeruh/exec_bash_exercise
 docker exec -it hopeful_greider bash
 tail -f ./logs.txt
@@ -60,9 +68,11 @@ Wed, 25 Sep 2019 19:54:30 GMT
 Wed, 25 Sep 2019 19:54:33 GMT
 Secret message is:
 "Docker is easy"
+```
 
 1.5
 
+```bash
 docker run -it --name web ubuntu:16.04
 root@847b8a627cb6:/# apt-get update
 root@847b8a627cb6:/# apt-get -qq -y install curl
@@ -70,8 +80,6 @@ root@847b8a627cb6:/# echo "Input website:"; read website; echo "Searching.."; sl
 Input website:
 helsinki.fi
 Searching..
-
-```bash
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>301 Moved Permanently</title>
