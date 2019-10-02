@@ -89,3 +89,33 @@ Searching..
 </body></html>
 root@847b8a627cb6:/#
 ```
+
+1.6
+
+Dockerfile-1.6
+
+```bash
+-h,             --help                  to show this message
+-a [age],       --adult [age]           to check if you're older than 18
+-c [time],      --clock [time]          to start a clock
+-t [size],      --triangle [size]       to draw a triangle, takes second argument as the size
+```
+
+1.7
+
+Dockerfile-1.7
+
+```bash
+Successfully tagged curler:latest
+MacBook-Pro-Yekku:osa-1 yekku$ docker run -it curler
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+```
