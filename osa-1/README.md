@@ -119,3 +119,30 @@ Searching..
 <p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
 </body></html>
 ```
+
+1.8
+
+```bash
+docker build -t second-one .
+docker run -v $(pwd)/logs.txt:/usr/app/logs.txt second-one
+(node:1) ExperimentalWarning: The fs.promises API is experimental
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+
+Secret message is:
+"Volume bind mount is easy"
+Thu, 03 Oct 2019 20:03:59 GMT
+```
+
+```bash
+
+```
