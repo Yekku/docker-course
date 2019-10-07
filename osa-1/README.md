@@ -143,6 +143,26 @@ Secret message is:
 Thu, 03 Oct 2019 20:03:59 GMT
 ```
 
+1.9
+
+```bash
+docker build -t app-in-port .
+docker run -p 1234:80 app-in-port
+
+http://127.0.0.1:1234
+Ports configured correctly!!
+```
+
+1.10
+
+```bash
+cd frontend-example-docker
+docker build -t frontend .
+docker run -p 5000:5000 frontend
+
+Exercise 1.10: Congratulations! You configured your ports correctly!
+```
+
 ```bash
 
 ```

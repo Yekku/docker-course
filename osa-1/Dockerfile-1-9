@@ -1,0 +1,3 @@
+FROM devopsdockeruh/ports_exercise
+
+EXPOSE 80
