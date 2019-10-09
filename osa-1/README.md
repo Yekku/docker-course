@@ -173,6 +173,20 @@ docker run -p 8000:8000 -v $(pwd)/logs.txt:/usr/app/logs.txt backend
 Port configured correctly, generated message in logs.txt
 ```
 
+1.12
+
+```bash
+cd frontend-example-docker
+docker build -t frontend .
+docker run -p 5000:5000 frontend
+
+cd backend-example-docker
+docker build -t backend .
+docker run -p 8000:8000 -v $(pwd)/logs.txt:/usr/app/logs.txt backend
+
+Exercise 1.12: Press to Test! Working!
+```
+
 ```bash
 
 ```
