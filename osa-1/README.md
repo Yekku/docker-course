@@ -197,6 +197,16 @@ docker run -p 8080:8080 java-project
 Success
 ```
 
+1.14
+
+```bash
+cd rails-example-project
+docker build -t rails-project .
+docker run -p 3000:3000 rails-project
+
+Press was successfully created.
+```
+
 ```bash
 
 ```
