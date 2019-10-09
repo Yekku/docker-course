@@ -187,6 +187,16 @@ docker run -p 8000:8000 -v $(pwd)/logs.txt:/app/logs.txt backend
 Exercise 1.12: Press to Test! Working!
 ```
 
+1.13
+
+```bash
+cd spring-example-project
+docker build -t java-project .
+docker run -p 8080:8080 java-project
+
+Success
+```
+
 ```bash
 
 ```
