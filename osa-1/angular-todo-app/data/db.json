@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Read SitePoint article",
+      "complete": false
+    },
+    {
+      "title": "Start Docker project",
+      "complete": false,
+      "id": 4
+    },
+    {
+      "title": "Push to Docker Hub",
+      "complete": false,
+      "id": 5
+    }
+  ]
+}
