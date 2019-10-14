@@ -210,10 +210,6 @@ Press was successfully created.
 1.15
 
 ```bash
-cd angular-todo-app
-docker-compose up -d
-
-docker-compose down
 
 https://cloud.docker.com/repository/docker/yekku/angular-todo-app
 ```
@@ -224,6 +220,13 @@ https://cloud.docker.com/repository/docker/yekku/angular-todo-app
 https://new-press.herokuapp.com/
 ```
 
-```bash
+1.17
 
+Simple todo angular2 app
+
+```bash
+cd angular-todo-app
+docker-compose up -d
+=====================
+docker-compose down
 ```
